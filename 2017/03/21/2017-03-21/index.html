@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.2.6 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            程序员，这是你想要的技术leader吗？---- 读后笔记 | 
+        
+        IMPORT THIS
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Alex">
+    <meta name="description" content="“好好学习，天天向上。”">
+    <meta name="keywords" content="null">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="IMPORT THIS">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://alex77lee.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="程序员，这是你想要的技术leader吗？---- 读后笔记 | IMPORT THIS">
+    <meta property="og:description" content="“好好学习，天天向上。”">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+    body, html {
+        font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    }
+
+    a {
+        color: #00838F;
+    }
+
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important;
+    }
+
+    /* Sidebar User Drop Down Menu Text Color */
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+        color: #0097A7 !important;
+    }
+
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+        color: #0097A7 !important;
+    }
+
+    .toTop {
+        background: #757575 !important;
+    }
+
+    .material-layout .material-post>.material-nav,
+    .material-layout .material-index>.material-nav,
+    .material-nav a {
+        color: #757575;
+    }
+
+    #scheme-Paradox .MD-burger-layer {
+        background-color: #757575;
+    }
+
+    #scheme-Paradox #post-toc-trigger-btn {
+        color: #757575;
+    }
+
+    .post-toc a:hover {
+        color: #00838F;
+        text-decoration: underline;
+    }
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+
+        /* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+            background-color: #fff;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            setTimeout(function () {
+                document.body.background="https://api.i-meto.com/bing?new, color=blue, type=N";
+            }, 2000);
+        }
+    </script>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+
+    <script src="/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/highlight/atom-one-dark.css">
+
+    <!-- UC Browser Compatible-->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write('<link rel="stylesheet" href="/css/uc.css">');
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#团队领导者职业发展"><span class="post-toc-number">1.</span> <span class="post-toc-text">团队领导者职业发展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#工程师分类"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">工程师分类</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#团队领导者品质"><span class="post-toc-number">2.</span> <span class="post-toc-text">团队领导者品质</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#工作职责定位"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">工作职责定位</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#成熟"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">成熟</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#勇敢"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">勇敢</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#勤奋"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">勤奋</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#脚踏实地"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">脚踏实地</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#公平、透明"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">公平、透明</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#决策能力"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">决策能力</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#开放姿态"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">开放姿态</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#为人处世"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">为人处世</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#宽容"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">宽容</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#保持身体健康"><span class="post-toc-number">2.11.</span> <span class="post-toc-text">保持身体健康</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#带领团队心得"><span class="post-toc-number">3.</span> <span class="post-toc-text">带领团队心得</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#幼儿园家长会感悟"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">幼儿园家长会感悟</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#自主循环"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">自主循环</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#技术人员心态成长四个阶段"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">技术人员心态成长四个阶段</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#个人职业发展"><span class="post-toc-number">4.</span> <span class="post-toc-text">个人职业发展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不要计较职位，更应该看岗位发展前景"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">不要计较职位，更应该看岗位发展前景</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#抛弃通道思维，建立雷达视角"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">抛弃通道思维，建立雷达视角</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#时间管理"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">时间管理</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#总结"><span class="post-toc-number">5.</span> <span class="post-toc-text">总结</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#读后笔记"><span class="post-toc-number">6.</span> <span class="post-toc-text">读后笔记</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://oij1682n2.bkt.clouddn.com/6360438160865604241511559876_o-LEADER-facebook.jpg)">
+    
+            <p class="article-headline-p">
+                程序员，这是你想要的技术leader吗？---- 读后笔记
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://oij1682n2.bkt.clouddn.com/12110830973_abb6437d89_o.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Alex</strong>
+        <span>3月 21, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=程序员，这是你想要的技术leader吗？---- 读后笔记&url=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=程序员，这是你想要的技术leader吗？---- 读后笔记&url=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html&via=Alex" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>2017-03-21 周明耀 InfoQ InfoQ</p>
+<p>作者｜周明耀  </p>
+<blockquote>
+<p>技术团队的领导总是在发愁怎样带团队，团队的程序员总是会抵触各种团队“文化”、规章制度。两者都有各自的角度和出发点，很难分出真正的对错。这篇文章里的技术leader，是身为程序员的你想要的吗？是同为技术leader的你所追求的吗？</p>
+</blockquote>
+<p>本文是「我所理解的技术管理——如何带领一支软件开发团队」系列文章第一篇。</p>
+<p>本系列文章主要分为以下几部分，排名不分先后：团队领导者品质、个人职业发展建议；如何进行团队建设；如何做好人员管理、沟通工作；项目管理包括哪些内容；产品设计相关想法分享；技术调研/预研工作应该怎么做；如何进行专利布局；其他能力，包括阅读、翻译、编写文章、演讲，等等。</p>
+<p>一直想对自己的工作内容、经历进行总结，近1、2年更是有这样的想法，但是又好像一直缺乏某种动力，直到最近时不时地听到一些关于“CTO要不要写代码”、“我们不需要纯管理的Leader”、“我们招人要编码的”等等话题或者HR的只言片语，而市面上几乎没有真正介绍如果做一位合格的技术管理经理（Leader）的书，所以我觉得我应该对所做的工作做一次深层次的总结。</p>
+<p>需要说明的是：</p>
+<ul>
+<li><p>首先，本系列文章总结的方法论是我个人的总结产物，力求实践，不会多讲空话、套话，也可能存在自我认知的局限，请读者见谅，多提意见。</p>
+</li>
+<li><p>其次，我觉得人脑是越学越灵活的，也许5年后我会认为现在的方法论存在一些问题，到时候我会写文章自我纠正。再者，技术管理人员很多时候就是一个小号的CTO，如果需要自己决定产品方向、销售，那就是个小号的CEO，所以技术领域的综合能力也是你的必备能力。</p>
+</li>
+<li><p>最后，我肯定会继续站在技术管理一线，无论Title、薪资、政治斗争，哪种都不会让我改变自己的职场定位，与君共勉。</p>
+</li>
+</ul>
+<h3 id="团队领导者职业发展"><a href="#团队领导者职业发展" class="headerlink" title="团队领导者职业发展"></a>团队领导者职业发展</h3><h4 id="工程师分类"><a href="#工程师分类" class="headerlink" title="工程师分类"></a>工程师分类</h4><p>前苏联著名物理学家Lev Davidovich Landau提出过一个衡量物理学家水平的郎道等级。他把世界上的物理学家分为了五级，即第一等的物理学家的贡献是第二等的十倍，第二等是第三等的十倍，以此类推。其实，在各个行业里，不同层次人才的贡献也都大多如此。比如在IT行业里，乔布斯认为他的合伙人沃茨尼亚克就抵得上20个二流的工程师。从成本上看，一流工程师的收入可能是二流工程师的两三倍，但是，前者的贡献可能大十倍，从经济的角度来讲，采用最优秀的人才是最合算的。</p>
+<p>我的认知是，无论你做的职位，例如工程师、资深工程师、项目经理、技术经理、系统架构师、项目总监、技术总监、CTO，等等，首先你一定还具有工程师特性，否则你就无法完全带领一支技术团队，无法给他们技术上的支撑，所有的控制都是基于职位的，而不是基于权威影响力。</p>
+<p>引用吴军博士的《硅谷之谜》一书中对于工程师的理解，我也认同这样的说法，即工程师分为五等，如下所示，我们从最低要求说起，大家努力让自己的职业生涯向上一等级工程师能力靠拢：</p>
+<ul>
+<li><p>第五等工程师，能够独立设计和实现一项功能的人。这是对工程师的基本要求。</p>
+</li>
+<li><p>第四等工程师需要有点产品头脑，也就是说他们在做一件事之前，要知道所做出来的东西是否有用、易用，是否便于维护，是否性能稳定，等等。除了要具备产品设计方面的基本知识，还要具有一定的领导才能，能在整个产品的生命周期从头到尾将一个产品负责到底。这在很多硅谷的公司里，基本上是一个高级工程师所应有的基本素质。</p>
+</li>
+<li><p>第三等的工程师，可以做出行业里最好的产品。他们与第四等工程师有着质的差别，这不仅反映在技术水平、对市场的了解、对用户新的了解以及组织能力等诸方面，而且也反映在悟性的差异上。</p>
+</li>
+<li><p>第二等的工程师是那些可以给世界带来惊喜的热，他们在其工作的原创性以及对世界的影响力上和前三等有巨大差别。</p>
+</li>
+<li><p>第一等的工程师是开创一个全新行业的人，这些工程师不仅在技术和产品等各个方向上与第二等工程师有了质的差别，而且在经验和管理上也是好手，他们通常也是企业家，并通过自己的产品改变了世界。这一类人常常是可遇而不可求的。</p>
+</li>
+</ul>
+<h3 id="团队领导者品质"><a href="#团队领导者品质" class="headerlink" title="团队领导者品质"></a>团队领导者品质</h3><h4 id="工作职责定位"><a href="#工作职责定位" class="headerlink" title="工作职责定位"></a>工作职责定位</h4><p>大家要明白，一家企业能够生存，一定是业务开展得不错，所以对于我们技术管理人来说，我们需要做到技术与业务的融合。对于一名技术团队负责人来说，我们需要做“技术的业务派，业务的技术派”，只有做到技术与业务的高度融合，技术才能引领业务，创造价值。以电商企业为例，如果技术团队的定位是完成业务部门提出的需求，那么对公司的价值是不大的。</p>
+<p>技术团队的定位应该是“技术引领业务”，首先技术人员要成为业务专家，通过系统性的思考，规划出跟企业管理思想具有高度一致性的电商系统。同时，系统必须具备柔性，因为电商的模式是多样化的。只有这样，系统才能成为业绩增长的基石，成为企业的核心竞争力，为企业创造强大的技术壁垒。</p>
+<h4 id="成熟"><a href="#成熟" class="headerlink" title="成熟"></a>成熟</h4><p>每天回到家，我开始我的另一份职责，洗澡、洗衣服、陪孩子学古诗、陪家人聊天、写作，这就是生活，一个男人结婚、生子后的生活一定是与单身时不一样的，要能理解生活，承担生活的重担。坦率地说，我作为面试官，一直对较为成熟的、能吃苦的、能理解别人的人情有独钟。任何不成熟的人，最终都会在职场中露出他的自私、明哲保身、急躁、乱说话等等特征。</p>
+<h4 id="勇敢"><a href="#勇敢" class="headerlink" title="勇敢"></a>勇敢</h4><p>《家园防线》这部由杰生·斯坦森主演的电影，讲述的是一位卧底毒贩的警官，查出毒贩后隐姓埋名，过了一段平静生活后，又为了保护女儿而与坏人正面交锋的故事，电影很硬汉、很父亲，建议大家观看。</p>
+<p>回到我们的团队建设领域，我们作为团队负责人，也应该有硬汉本色，不能惧怕外在的威胁。很多时候，并不是你想团队怎么发展它就怎么发展的，很有可能你的团队刚刚明确产品目标、技术目标，人员也根据这些目标招聘到位，正准备大干一场的时候，忽然听说也有另外一个团队在做一模一样的事情，别以为这是笑话，很多大公司都存在这类问题，即缺少顶层设计。</p>
+<p>面对这类问题，你可以选择另外的方向，也可以选择退缩，我觉得无论哪种选择，你的团队都有可能分崩离析，谁都有自己的职业定位，想做的产品、技术没了，有能力的人就不跟你玩了。我个人更倾向的是，在领导层不明确谁做的前提下，尽全力做下去、做好。</p>
+<h4 id="勤奋"><a href="#勤奋" class="headerlink" title="勤奋"></a>勤奋</h4><p>最近在看加里·内维尔（曼联贝克汉姆时代的巨星，英格兰国家队队长）的自传，他记录自己是一个资质平庸的人，甚至比不上自己的弟弟，但是最终通过自己的努力实现了职业辉煌。他回忆20岁之前根本不敢谈女朋友、去酒吧，每天的工作是练球、休息，依靠自己的勤奋，以及良好的职业素养，他才能赢得老爵爷的认可，才能和其他天赋过人的球星一起上场比赛。</p>
+<p>作为一名技术管理人，你要做的是比别人更早接触新技术，更深度地理解系统架构，更能表现出你带领团队的方方面面能力，所有这些，都需要勤奋。在我熟悉的技术领域，我能够不停地和人沟通、指导、给出自己的想法，这是日积月累的能力，而不是看几天书就能说出来的。</p>
+<h4 id="脚踏实地"><a href="#脚踏实地" class="headerlink" title="脚踏实地"></a>脚踏实地</h4><p>在伦敦闻名世界的威斯敏斯特大教堂地下室的墓碑林中，有一块名扬世界的墓碑。其实这只是一块很普通的墓碑，粗糙的花岗石质地，造型也很一般，同周围那些质地上乘、做工优良的亨利三世到乔治二世等二十多位英国前国王墓碑，以及牛顿、达尔文、狄更斯等名人的墓碑比较起来，它显得微不足道，不值一提。并且它没有姓名，没有生卒年月，甚至上面连墓主的介绍文字也没有。</p>
+<p>但是，就是这样一块无名氏墓碑，却成为名扬全球的著名墓碑。每一个到过威斯特敏斯特大教堂的人，他们可以不去拜谒那些曾经显赫一世的英国前国王们，可以不去拜谒那诸如狄更斯、达尔文等世界名人们，但他们却没有人不来拜谒这一块普通的墓碑，他们都被这块墓碑深深地震撼着，准确地说，他们被这块墓碑上的碑文深深地震撼着。</p>
+<p>在这块墓碑上，刻着这样的一段话：</p>
+<blockquote>
+<p>When I was young and free and my imagination had no limits,I dreamed of changing the world.As I grew older and wiser, I discovered the world would not change, so I shortened my sights somewhat and decided to change only my country. But it, too, seemed immovable.</p>
+<p>As I grew into my twilight years, in one last desperate attempt, I settled for changing only my family, those closest to me, but alas, they would have none of it.</p>
+<p>And now, as I lie on my deathbed, I suddenly realize:</p>
+<p>If I had only changed myself first, then by example I would have changed my family.From their inspiration and encouragement, I would then have been able to better my country, and who knows, I may have even changed the world.</p>
+<p>当我年轻的时候，我的想象力从没有受到过限制，我梦想改变这个世界。</p>
+<p>当我成熟以后，我发现我不能改变这个世界，我将目光缩短了些，决定只改变我的国家。</p>
+<p>当我进入暮年后，我发现我不能改变我的国家，我的最后愿望仅仅是改变一下我的家庭。但是，这也不可能。</p>
+<p>当我躺在床上，行将就木时，我突然意识到：</p>
+<p>如果一开始我仅仅去改变我自己，然后作为一个榜样，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情。然后谁知道呢？我甚至可能改变这个世界。</p>
+</blockquote>
+<p>回到技术管理领域，很多技术管理人，无论是初次担任还是资深人士，都会出现看不清自己的情况，即说白了容易自大。人一自大，就容易犯错误，技术、产品上容易定位失误。举个例子，如果现在我们决定做一个分布式数据库类似的存储组件，相信有一小部分人觉得应该自己做这个组件的底层技术，大部分的人会选择使用开源框架实现，这其实都没有错，取决于你产品的定位、公司实力，我想说的是，你在做这些决定之前，有没有做足充分的技术调研、产品调研工作，能不能如数家珍般地说清楚已有框架、产品的实现原理、优缺点、是否适用于你的产品场景等等，这些都是技术调研的工作，也是我们脚踏实地做事的一个例子。</p>
+<h4 id="公平、透明"><a href="#公平、透明" class="headerlink" title="公平、透明"></a>公平、透明</h4><p>GE创立于1892年，爱迪生是创始人，核心价值观是“诚信”。在GE进入中国时，发生了一起违背“诚信”的案例，一位员工多报销50元业务招待费用。这件事GE是这样处理的：从得知这一事情后，从美国派人前往中国调查此事，花费近1个月的时间，超过万元的差旅费，最终核实情况属实，做出解除与员工劳动合同的决定。GE之所以这样做，一方面是让全体员工知道GE核心价值观的重要性，以及公司维护它的决心，另外一方面也是对员工负责，给员工一个公平公正的处理程序。因此，一方面对价值观的坚持，对违反价值观的行为要有相应措施，另一方面过程要公正，这样才能做到让员工、让社会心服口服。</p>
+<p>回到我们的团队管理主题，无论是绩效考核，还是职位升迁，亦或是问题处理，都不应该是少数几个领导通过闭门会议形式完成，更应该是通过制定逻辑严谨的规章制度，通过类似于任职资格考核（团队建设部分会深入介绍）方式完成初步考察，再通过事情责任制方式明确个人的成绩、责任，最后通过有员工代表、相应部门代表参与的会议讨论决定，这样可以让整个团队朝着健康的方向发展，而不会让一部分人感觉被边缘化，滋生小团体产生。</p>
+<h4 id="决策能力"><a href="#决策能力" class="headerlink" title="决策能力"></a>决策能力</h4><p>决策总是在不同意见讨论的基础上做出判断，绝不会是一致性意见的产物。快速的决策通常都是错误的决策。决策的目标应该是明确的，决策的结论应该是简单而清晰的，而不是建立在一大堆假设的复杂的数学推断上的。</p>
+<p>团队领导者需要具备决策能力，决策能力又是与自身的技术积累，以及吸收新技术、新知识的能力密切相关的，保持一颗开放、积极的心态，保持对技术的严谨调研态度，以数据说话，这样才会做出正确的决策，而不是盲目决策，要对得起投资人的钱。</p>
+<h4 id="开放姿态"><a href="#开放姿态" class="headerlink" title="开放姿态"></a>开放姿态</h4><p>“我可能会不赞成你的看法，但是我尊重并捍卫你说话的权利”，这是我带领团队的座右铭之一。我们需要倡导“开放、共享、追求极致”的团队文化。人才是我们最大的财富，所以要建设以人为本的团队文化，创造出沟通顺畅、敢于挑战、喜欢创新的团队氛围。在团队文化建设方面，主要倡导的是互联网文化、极客精神。我们有的工程师，为了开发一个高效的算法，通宵熬夜，结果虽然只提升了短短的10毫秒，但这就是追求极致的精神。试想当放在一个亿万级调用量的场景下，提升10毫秒，结果的差别将是质的变化。</p>
+<h4 id="为人处世"><a href="#为人处世" class="headerlink" title="为人处世"></a>为人处世</h4><p>我们的社会有很多阴暗面：不公、剥削、诈骗等等。为了公司的形象，我们需要无比庄敬自强，公平待人，不可欺负弱势的人，也不可以做损及他人或自己的事。同时，我们需要一个谦卑的团队负责人，一个谦卑的人并不固执己见，而是会虚怀若谷地聆听他人的言论。伟大的人物也不整天仰望山巅，他亦会蹲下来为他的弟兄濯足。</p>
+<p>快乐与金钱和物质的丰盛并无必然关系。一个温馨的家、简单的衣着、健康的饮食，就是乐之所在。漫无止境地追求奢华，远不如俭朴生活那样能带给你幸福和快乐。能够内心保持这样心态的团队领导者，他面对很多困难时，因为有家人的支持，有团队的支持，有内心平和心态的支持，一定能够克服困难，勇往直前。</p>
+<h4 id="宽容"><a href="#宽容" class="headerlink" title="宽容"></a>宽容</h4><p>鲁迅：“我每看运动会时，常常这样想，优胜者固然可敬，但那些虽然落后而仍跑至终点不止的竞技者，和见了这样竞技者而肃然不笑的看客，乃至是中国将来的脊梁。”</p>
+<p>很多时候我们确实会遇到无功而返或者碌碌无为一年的情况，并不是不努力，而更可能的是产品或者技术的风潮还没到，我们走得有点过快了，或者有点走偏了。另外一种情况是团队成员的个人能力，有时候确实会遇到一些思维比较慢的同事，你布置了调研任务，也花费了时间做了详细解释，但是他就是理解错了。</p>
+<p>这种情况下我觉得需要看这个人的以往工作绩效，以及他对这个事情的理解态度来做出反应。我常说的是，这个人如果自身能力较弱，嘴上还死不承认，那就是作死。如果自身能力很强，也很积极做事，这个时候我们应该多放权，让他自己思考，他也会乐于如此。如果自身能力不强，但是他对自身弱点有认识，工作态度很好，这个时候犯错了，我们不能过度责骂，应该宽容对待他，先问清楚原因，然后拉他一起分析过程，帮助他成长，要知道，他是愿意干活的，只要他成长了，我们的团队整体都会受益。</p>
+<h4 id="保持身体健康"><a href="#保持身体健康" class="headerlink" title="保持身体健康"></a>保持身体健康</h4><p>“钱能买到一切有价的东西，独独换不回健康，也唯有生命才是无价的。” 我们经常会听说哪个名人得癌症了，哪个名人又猝死了，这些例子数不胜数。他人患病，我们会惋惜，却始终痛不上自己的身，很多时候，唯有感同身受，才能身心相印。</p>
+<p>我们只有保持身体健康，才能更好地带领团队。</p>
+<h3 id="带领团队心得"><a href="#带领团队心得" class="headerlink" title="带领团队心得"></a>带领团队心得</h3><h4 id="幼儿园家长会感悟"><a href="#幼儿园家长会感悟" class="headerlink" title="幼儿园家长会感悟"></a>幼儿园家长会感悟</h4><p>2016年9月23日，女儿上中班以后的第一次家长会。</p>
+<p>老师给家长出了一道题目：“论述传统授课型幼儿园教育方式VS新型游戏型幼儿园教育方式”，家长们临时组队，分为3组，讨论过程踊跃、激烈，正方、反方、中间派均很明确，最终结论如下面三张图。不得不说，家长会也是一个技术活啊，而且现在的家长，思维都很活跃，都很有自己的看法和主见，也都能尊重其他人，很不错。</p>
+<p>我的想法是，传统教育方式目标比较明确，就好比我们带领一个技术团队，通过传统教育方式培养出来的优等生，适合带领目标比较明确的团队，比如告诉你这个团队需要在指定时间内完成哪些需求点，最好是系统架构、数据流方式都进行限定，这样就比较容易完成了。</p>
+<p>游戏型幼儿园教育方式培养出来的优等生，创新能力十足，很有足见，能够在很短时间内找到自己的定位，懂得如何快速地与人打交道，找到适合自己的团队成员，一起抢夺有限的游戏资源，让自己和团队能够最大程度地玩耍。但是可能他们不太喜欢按部就班地工作，在那样的环境下容易产生抵触心理。</p>
+<p>这两种方式本身没有好与坏，关键在于你把它用在哪里，例如传统的外包行业、传统行业的IT部门，采用传统教育方式培养出来的学生能够较好地完成目标，因为他们习惯了惯性思维，能够理解容忍、包容，在不需要自己设定目标、设计创新型产品的时候，更能适应行业所限定的一切。</p>
+<p>而对于游戏型幼儿园培养的方向，是为不确定具体目标的新型行业、企业培养人才，因为在那些领域，你无论带领一个团队，还是负责一个产品的设计，没有人告诉你明确的目标，没有人告诉你这个团队的技术方向是什么，没有人告诉你做一个什么样的产品可以获得收益，全都要靠自己，只有在最短时间内能够找到自己的方向的Leader才能胜任这样的岗位要求。</p>
+<h4 id="自主循环"><a href="#自主循环" class="headerlink" title="自主循环"></a>自主循环</h4><p>女儿幼儿园是杭州市的老牌重点幼儿园，又隶属于机关单位，无论教师还是家长，学历、素养都较高，因此也作为了杭州市幼儿教育的示范改革单位进行试点，尝试采用新型教育方式培养孩子的自主能力、动手能力、社会适应能力，隐式地让孩子的智商、情商同步发展。</p>
+<p>举个例子，伊伊同学很想拿一张挂在树上的卡片，问题是除了那张卡片以外，还有其他很多张卡片，明明可以轻松地拿到其他的卡片，但是她一定要那张自己够不着的卡片。她看着柴老师，但是柴老师故意假装没看到她，这样僵持了一会，伊伊去找其他老师帮忙拿到了卡片。这个故事说明伊伊是一个很有自己主见的孩子，想好了就一定要，并且不会变通。另一方面，她善于寻求外部帮助，而不是一个人苦干。</p>
+<p>女儿个性比较内向，胆子比较小，对于新事物不太敢参与。看到小朋友都在爬一个只有入口，没有明确出口的袋子，她感觉很恐惧，连续在周围晃来晃去好一会，就是不敢尝试。这时候灵灵出现了，她很热情地邀请女儿一起爬过去，女儿还是不敢，灵灵就亲身示范。看到灵灵的尝试，女儿也找了一个袋子开始爬，但是由于看不到出口，她爬爬停停，灵灵爬出来以后立即跑到女儿这边，拉起她的袋子，大声说：“你看，我们能够看到光”。女儿很受鼓舞，很快就爬出了袋子。这个故事说明内向型的孩子不太敢于尝试新鲜事物，但是如果有人帮助，他们也是可以突破内心的恐惧，完成别人可以完成的工作。</p>
+<p>我们带领一支团队，可能是1、2个人，也可能是几十个人，甚至上百人，我们不可能做到事无巨细、一一谈话，很多时候需要分小组讨论，也要依赖于个人自主工作态度。比如说布置一个技术调研工作，你讲清楚了测试方案、测试用例，接下去的工作必然是由工程师一一分头行动，如果每一行代码都需要你来帮他设计，每一个外部工具都需要你去上搜索引擎搜索，那基本上你只能同时干一件事情了。</p>
+<h4 id="技术人员心态成长四个阶段"><a href="#技术人员心态成长四个阶段" class="headerlink" title="技术人员心态成长四个阶段"></a>技术人员心态成长四个阶段</h4><p>皮亚杰（瑞士）将儿童和青少年的认知发展划分为四个阶段：感知运动阶段、前运算阶段、具体运算阶段和形式运算阶段。他认为所有的儿童都会依次经历这四个阶段，新的心智能力的出现是每个新阶段到来的标志，而这些新的心智能力使得人们能够以更为复杂的方式来理解世界；虽然不同的儿童以不同的发展速度经历这几个阶段，但是都不可能跳过某一个发展阶段。同一个个体或许能同时进行不同阶段的活动，这明显地表现于一从一个阶段进入到一个新的阶段的转折时期。</p>
+<p>技术人员也类似地分为这几个阶段，在初级阶段，他们需要在你的帮助下感知需求、架构，渐渐地他们拥有了自己设计简单模块的能力，再接下来他们又有了复杂模块的设计能力，逐渐地通过实战训练，他们能够独立承担大项目的管理和设计工作。</p>
+<h3 id="个人职业发展"><a href="#个人职业发展" class="headerlink" title="个人职业发展"></a>个人职业发展</h3><h4 id="不要计较职位，更应该看岗位发展前景"><a href="#不要计较职位，更应该看岗位发展前景" class="headerlink" title="不要计较职位，更应该看岗位发展前景"></a>不要计较职位，更应该看岗位发展前景</h4><p>我清晰地记得我的一位同事和我说：“只要想，谁都可以当上总经理！这么多机会，你们又都是聪明人，最终不过是选择不同规模的公司做上去罢了。”</p>
+<p>最近有两件事对我震动很大。一件发生在朋友所在的公司。他们的市场总监算是公司的元老，在过去的近十年时间里与公司共进退，把生意额从几千万做到了十几个亿。功德圆满，受人尊敬。美国总部也对她青眼有加，不断褒奖。看起来，她是要在公司里做到退休的。然而从去年开始，受宏观经济形势影响，中国市场生意开始下滑。苦苦奋战了一年多之后，美国人宣布任命新的中国管理层。这位市场总监，就被赶走了。年届45的她，不知道还能不能找到一份理想的工作。</p>
+<p>另一件事则直接发生我另一个朋友身上。她是我见过最聪明的人之一，美国名校毕业，顶尖咨询公司的工作经历，后来成为了一家500强企业的管理层。用她自己的话说，“位高权重”。她情商又非常高，在公司里可谓左右逢源。我一直觉得她是我朋友中成功的典范。</p>
+<p>但事情就是变化得很快：原来的CEO退休了，换了一个和她不对味的新老板；公司模式调整，她管的那一块业务突然无足轻重了。她跟我抱怨说：“每天都被挤兑，做的事情又是那么的没有意义！”也想要跳槽，可是外面适合她的工作并不多。所以在被解雇之前，她可能要在这样不愉快的环境里煎熬很久。</p>
+<p>这两件事对我震动很大，是因为它们正好是违反我以往的认知的。在企业里面成功，往往就是依仗两个方面：要么你聪明，会交际，懂政治，被人认可；要么你做出成绩，贡献巨大，被认可。我觉得，咱们技术人员还是选后面一条比较合适。</p>
+<h4 id="抛弃通道思维，建立雷达视角"><a href="#抛弃通道思维，建立雷达视角" class="headerlink" title="抛弃通道思维，建立雷达视角"></a>抛弃通道思维，建立雷达视角</h4><p>如果你的能力不再是“职业通道”里的生存技巧，而是基于自身的天赋发展出的技能，那么你不再沿着一个狭窄的方向前进，而是以自身为圆心，等距离向外的探索，好像雷达扫描一样。当你发现一个机会落入你的雷达时，意味着你的技能与之是匹配的，那你就可以努力抓住它。会有很多工作机会落在你的雷达里，你可以选择其中有趣的进行发展。</p>
+<p>虽然像传统职业通道里的工作一样，机会也会此消彼长。但是你不再只看一个方向，而是有一个360度的视野，你的选择太多了。你的技能越强，你的雷达探索的面积越大。在这样的世界观里，我们不再追求人人都去做总经理，而是追求做一个靠天赋，靠能力吃饭的人。转变的过程是痛苦的，跳出原有模式是需要极大勇气的。但最后的收益很诱人，即自由、更强的安全感，还有乐趣。</p>
+<h4 id="时间管理"><a href="#时间管理" class="headerlink" title="时间管理"></a>时间管理</h4><p>作为一名管理者，很多时候自己所能支配的时间有限，可能有些是非常有限，只有学会集中精力、善用时间，才会让工作效率更高。如果管理者在多个行业或项目中拥有较多的资源，那么需要自己设定优先次序，而且遵循要事第一的原则，坚守其设定的优先次序。战线如果太宽，势必造成精力无法集中，反而会影响一些原本优先级较高的项目的执行。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这篇文章主要分享了自己对于技术管理的第一章，主要介绍了团队领导者品质、带领团队心得以及个人职业发展想法，下一篇文章我会重点介绍如何从零开始构建一支技术团队，以及如何做好团队和人员的管理、沟通工作。</p>
+<p>，2004年毕业于浙江大学，工学硕士，国外投资银行12年工作经验，4年分布式系统,物联网工作经验，10年技术团队管理经验。IBM开发者论坛专家作者，Infoq专栏作者。著有《大话java性能优化》，即将发布著作《深入理解jvm和gc》，已提交分布式计算领域发明专利超过15项。微信号michael_tec。</p>
+<hr>
+<h3 id="读后笔记"><a href="#读后笔记" class="headerlink" title="读后笔记"></a>读后笔记</h3><ol>
+<li>工程师的分类，从低到高分为5类。能有第二等工程师的公司，我想肯定是在风口上的公司。阅读此文的时候，我正在筛检 HR 给的工程师简历，争取多找到几个第五等工程师，至于就第四等需要碰运气了。</li>
+<li>团队领导者的品质<ul>
+<li>工作职责定位：<code>我们需要做“技术的业务派，业务的技术派”</code>。表面上听起来有点幽默，但是事实上的确如此。</li>
+<li>勇敢:<code>在领导层不明确谁做的前提下，尽全力做下去、做好。</code>。经常会遇到这类事情的发生，作者说的不为是一个很中肯的建议。</li>
+<li>勤奋 ：这个不用质疑，不管是一等工程师还是五等工程师，都要遵循的一种情怀。</li>
+<li>脚踏实地：从学习一种新的语言来说，有些人看了一下基础就开始编写代码，希望从编写中寻求进步，这样是一个快速入门的好办法。另外一些人，在熟悉完基础规则后，开始学习高级规则和思想，这种学习新语言的方法慢，但是相对来说更加的扎实，不敢说以后实际情况中会比第一种的要高多少，至少这是<code>脚踏实地</code>的另外一种表达。</li>
+<li>公平透明：作者提到的晋升规则是个不错的建议，我们团队有个金桔–“不仅要做得出来还要能说的出来。”有许多的程序员是只能做不能说的，就是表达能力不行，不过如果你自己做的和心里想的都说不出来，还有谁能指望你做的东西呢？</li>
+<li>决策能力：取决于你的勤奋程度。</li>
+<li>开放姿态、为人处事、宽容这三条个人感觉是公司规则的制定者才需要关注的。如果一个小团队做这些事情的话，会不会现的很突兀呢？</li>
+<li>保持身体健康  ：直到体重上了80才体会这条的重要性。</li>
+</ul>
+</li>
+<li>带领团队心得<ul>
+<li><code>只有在最短时间内能够找到自己的方向的Leader才能胜任这样的岗位要求</code></li>
+<li>只要画好范围即可，剩下的事情需要下面的人自己做。</li>
+<li>leader 需要循序渐进的引导开发人员学习的方向。</li>
+</ul>
+</li>
+<li>个人职业发展<ul>
+<li>做出成绩，贡献巨大，被认可</li>
+<li>跳出自己的舒适区，运用<code>勤奋</code>和<code>脚踏实地</code>建立360度的知识广度，才能自如的抓住任何一个机遇。</li>
+<li>以前看过一篇文章《下班后的2个小时决定你的能力》，想作为时间的管理者，这也是我的个人目标。不得不说我个人的时间管理特别的差。</li>
+</ul>
+</li>
+</ol>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="//2017/03/22/2017-03-22-1/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="//2017/03/17/2017-03-17/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="http://oij1682n2.bkt.clouddn.com/12110830973_abb6437d89_o.png" alt="Alex's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        alex77lee@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:alex77lee@163.com" target="_blank" title="Email Me">
+                        <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+            主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+    <!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+    -->
+
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a>
+        </ul>
+    </li>
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Python学习/">Python学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/工具推荐/">工具推荐<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/读书笔记/">读书笔记<span class="sidebar_archives-count">3</span></a>
+            </ul>
+        </li>
+    
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+  	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+            文章总数
+            <span class="sidebar-badge">6</span>
+        </a>
+    </li>
+</ul>
+
+
+        <!-- Sidebar Divider -->
+        <div class="sidebar-divider"></div>
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Theme Material -->
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        主题 - Material
+        <span class="sidebar-badge badge-circle">i</span>
+    </div>
+</a>
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+    sidebar.help
+    <span class="mdl-button__ripple-container">
+      <span class="mdl-ripple"></span>
+    </span>
+  </div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+    </div>
+
+    <!-- Sidebar Sponsor -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;IMPORT THIS
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+<script src="/js/highlight.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+
+                </main>
+            </div>
+        </body>
+    
+</html>
