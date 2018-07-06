@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="PHP7.2 Data Structures 使用1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a">
+    <meta name="description" content="1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a = array(1,2,3,4);$b = ar">
 <meta name="keywords" content="PHP7,DataStructures">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP7.2 Data Structures 使用">
 <meta property="og:url" content="http://alex77lee.github.io/2018/07/06/2018-07-06/index.html">
 <meta property="og:site_name" content="IMPORT THIS">
-<meta property="og:description" content="PHP7.2 Data Structures 使用1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a">
+<meta property="og:description" content="1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a = array(1,2,3,4);$b = ar">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://oij1682n2.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png">
-<meta property="og:updated_time" content="2018-07-06T09:04:19.456Z">
+<meta property="og:updated_time" content="2018-07-06T09:05:33.266Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP7.2 Data Structures 使用">
-<meta name="twitter:description" content="PHP7.2 Data Structures 使用1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a">
+<meta name="twitter:description" content="1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a = array(1,2,3,4);$b = ar">
 <meta name="twitter:image" content="http://oij1682n2.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png">
     
     
@@ -100,7 +100,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP7-2-Data-Structures-使用"><span class="toc-number">1.</span> <span class="toc-text">PHP7.2 Data Structures 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-number">1.1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-PHP-原始的数据结构Array"><span class="toc-number">1.2.</span> <span class="toc-text">2. PHP 原始的数据结构Array</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-缺点"><span class="toc-number">1.2.1.</span> <span class="toc-text">Array 缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口类"><span class="toc-number">1.2.2.</span> <span class="toc-text">接口类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现类"><span class="toc-number">1.2.3.</span> <span class="toc-text">实现类</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-number">1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-PHP-原始的数据结构Array"><span class="toc-number">2.</span> <span class="toc-text">2. PHP 原始的数据结构Array</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-缺点"><span class="toc-number">2.1.</span> <span class="toc-text">Array 缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口类"><span class="toc-number">2.2.</span> <span class="toc-text">接口类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现类"><span class="toc-number">2.3.</span> <span class="toc-text">实现类</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -139,7 +139,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="PHP7-2-Data-Structures-使用"><a href="#PHP7-2-Data-Structures-使用" class="headerlink" title="PHP7.2 Data Structures 使用"></a>PHP7.2 Data Structures 使用</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pecl install ds</span><br></pre></td></tr></table></figure>
+    <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pecl install ds</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install homebrew/php/php71-ds</span><br></pre></td></tr></table></figure>
 <p>目前PHP7.2不支持使用 brew 安装。</p>
 <h2 id="2-PHP-原始的数据结构Array"><a href="#2-PHP-原始的数据结构Array" class="headerlink" title="2. PHP 原始的数据结构Array"></a>2. PHP 原始的数据结构<code>Array</code></h2><p> PHP5.x 的时代，<code>Array</code>是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = array(1,2,3,4);</span><br><span class="line">$b = array(&apos;a&apos;=&gt;1,&apos;b&apos;=&gt;2,&apos;c&apos;=&gt;3);</span><br></pre></td></tr></table></figure></p>
@@ -268,7 +268,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP7-2-Data-Structures-使用"><span class="toc-number">1.</span> <span class="toc-text">PHP7.2 Data Structures 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-number">1.1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-PHP-原始的数据结构Array"><span class="toc-number">1.2.</span> <span class="toc-text">2. PHP 原始的数据结构Array</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-缺点"><span class="toc-number">1.2.1.</span> <span class="toc-text">Array 缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口类"><span class="toc-number">1.2.2.</span> <span class="toc-text">接口类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现类"><span class="toc-number">1.2.3.</span> <span class="toc-text">实现类</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-number">1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-PHP-原始的数据结构Array"><span class="toc-number">2.</span> <span class="toc-text">2. PHP 原始的数据结构Array</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-缺点"><span class="toc-number">2.1.</span> <span class="toc-text">Array 缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口类"><span class="toc-number">2.2.</span> <span class="toc-text">接口类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现类"><span class="toc-number">2.3.</span> <span class="toc-text">实现类</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
