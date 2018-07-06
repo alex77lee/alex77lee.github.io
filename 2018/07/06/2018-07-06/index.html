@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="PHP7.2 Data Structures 使用1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a">
+<meta name="keywords" content="PHP7,DataStructures">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP7.2 Data Structures 使用">
+<meta property="og:url" content="http://alex77lee.github.io/2018/07/06/2018-07-06/index.html">
+<meta property="og:site_name" content="IMPORT THIS">
+<meta property="og:description" content="PHP7.2 Data Structures 使用1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://oij1682n2.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png">
+<meta property="og:updated_time" content="2018-07-06T09:04:19.456Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PHP7.2 Data Structures 使用">
+<meta name="twitter:description" content="PHP7.2 Data Structures 使用1. 安装1pecl install ds 1brew install homebrew/php/php71-ds 目前PHP7.2不支持使用 brew 安装。 2. PHP 原始的数据结构Array PHP5.x 的时代，Array是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。123&amp;lt;?php$a">
+<meta name="twitter:image" content="http://oij1682n2.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>PHP7.2 Data Structures 使用</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2017/05/25/2017-05-25/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://alex77lee.github.io/2018/07/06/2018-07-06/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&text=PHP7.2 Data Structures 使用"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&is_video=false&description=PHP7.2 Data Structures 使用"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=PHP7.2 Data Structures 使用&body=Check out this article: http://alex77lee.github.io/2018/07/06/2018-07-06/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&name=PHP7.2 Data Structures 使用&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP7-2-Data-Structures-使用"><span class="toc-number">1.</span> <span class="toc-text">PHP7.2 Data Structures 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-number">1.1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-PHP-原始的数据结构Array"><span class="toc-number">1.2.</span> <span class="toc-text">2. PHP 原始的数据结构Array</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-缺点"><span class="toc-number">1.2.1.</span> <span class="toc-text">Array 缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口类"><span class="toc-number">1.2.2.</span> <span class="toc-text">接口类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现类"><span class="toc-number">1.2.3.</span> <span class="toc-text">实现类</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        PHP7.2 Data Structures 使用
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">IMPORT THIS</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-07-06T08:43:11.574Z" itemprop="datePublished">2018-07-06</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/DataStructures/">DataStructures</a>, <a class="tag-link" href="/tags/PHP7/">PHP7</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="PHP7-2-Data-Structures-使用"><a href="#PHP7-2-Data-Structures-使用" class="headerlink" title="PHP7.2 Data Structures 使用"></a>PHP7.2 Data Structures 使用</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pecl install ds</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install homebrew/php/php71-ds</span><br></pre></td></tr></table></figure>
+<p>目前PHP7.2不支持使用 brew 安装。</p>
+<h2 id="2-PHP-原始的数据结构Array"><a href="#2-PHP-原始的数据结构Array" class="headerlink" title="2. PHP 原始的数据结构Array"></a>2. PHP 原始的数据结构<code>Array</code></h2><p> PHP5.x 的时代，<code>Array</code>是唯一的表示集合的数据类型，在 PHP 中，他既是 List 也是 Map， 他就是一切。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = array(1,2,3,4);</span><br><span class="line">$b = array(&apos;a&apos;=&gt;1,&apos;b&apos;=&gt;2,&apos;c&apos;=&gt;3);</span><br></pre></td></tr></table></figure></p>
+<p>这种数据类型的确是给开发者带来了便捷性，但让PHPer 会主键的忽略掉数据结构带来的好处，特别是在学习其他的语言时，给PHPer 带来困扰。</p>
+<p>在 PHP 升级到7后，<code>Array</code>也同时得到了优化，但是他的结构并没有发生变化， “optimised for everything; optimised for nothing”  with room for improvement。那如果我们可以通过引入更便利的数据结构优化性能，同时写代码反而更方便了，那何乐而不为呢?</p>
+<blockquote>
+<p>“SPL数据结构怎么样？”<br> Unfortunately they are terrible. They did offer some benefits prior to PHP 7, but have since been neglected to the point of having no practical value.</p>
+</blockquote>
+<blockquote>
+<p>“我们为什么不能修正和改进它们？”<br>We could, but I believe their design and implementation is so poor that it would be better to replace them with something brand new.</p>
+</blockquote>
+<blockquote>
+<p>“SPL数据结构的设计非常可怕。” - 安东尼 费拉拉</p>
+</blockquote>
+<h3 id="Array-缺点"><a href="#Array-缺点" class="headerlink" title="Array 缺点"></a>Array 缺点</h3><ul>
+<li>PHP 的 Array 访问不存在的 key 可以得到 null，不会产生 fatal error，但会有一个 E_NOTICE。这个 E_NOTICE 会被 set_error_handler 注册的函数截获。显然，这种代码上的不干净和性能上的无谓开销完全是可以避免的。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = [];</span><br><span class="line">$a[&apos;a&apos;]; // PHP Notice:  Undefined offset</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>一般的 PHPer 都不会用array_key_exists 和 if else 来处理，这样做会显得有些麻烦。</p>
+<ul>
+<li>有时候Array 的使用，性能会变得很差。Array 本质上是一个 Map，unshift 一个元素进来，将会改变每个元素的 key，这是一个 O(n)操作。另外，PHP 的 Array 将其 value(包括 key 和 它的 hash) 保存在一个 bucket 中，所以我们需要查看每一个 bucket 并更新 hash。<br>PHP 内部其实是通过创建新的 array 来完成 array_unshift 操作的，其性能问题可想可知。</li>
+</ul>
+<p>DataStructures，PHP7的一个扩展，数组(Array)的一个替代品。</p>
+<p><strong>Github</strong>: <a href="https://github.com/php-ds" target="_blank" rel="noopener">https://github.com/php-ds</a></p>
+<p><strong>Namespace:</strong> Ds\</p>
+<p><strong>接口类:</strong> Collection, Sequence, Hashable</p>
+<p><strong>实现类(final class):</strong> Vector, Deque, Map, Set, Stack, Queue, PriorityQueue, Pair</p>
+<p><img src="http://oij1682n2.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png" alt="php7 data structure"></p>
+<h3 id="接口类"><a href="#接口类" class="headerlink" title="接口类"></a>接口类</h3><ul>
+<li>Collection 是一个基础接口，定义了一个数据集合（这里的集合指的是 Collection，不是 Set） 的基本操作，比如 foreach, echo, count, print_r,  var_dump, serialize, json_encode, and clone.等。</li>
+<li>Sequence 是类数组数据结构的基础接口，定义了很多重要且方便的方法，比如 contains, map, filter, reduce, find, first, last 等。从图中可知，Vector, Deque, Stack, Queue 都直接或者间接的实现了这个接口。它的特点如下：<ul>
+<li>值始终会被索引 [0, 1, 2, …, size - 1]</li>
+<li>删除或插入更新所有连续值的位置。</li>
+<li>只允许访问索引在 [0, size-1]的值。</li>
+</ul>
+</li>
+<li>Hashable 在图中看起来比较孤立，但对于 Map 和 Set 很重要。一个 Object 如果实现了 Hashable，就可以作为 Map 的 key，可以作为 Set 的元素。这样 Map 和 Set 就能像 Java 一样方便的使用了。</li>
+</ul>
+<h3 id="实现类"><a href="#实现类" class="headerlink" title="实现类"></a>实现类</h3><ul>
+<li><p>Vector 应该是最为常用的数据结构之一了，可以把它当成 Ruby 的 Array 或者 Python 的 List。其元素的值的 index 就是它在 buffer 中的 index，所以效率很高。只要有使用数组的需求且不需要 insert, remove, shift 和 unshift 的都可以用它。<br><a href="https://player.vimeo.com/video/154438958" target="_blank" rel="noopener">视频说明</a></p>
+<ul>
+<li>优点：<ul>
+<li>低内存使用量 </li>
+<li>get, set, push and pop的复杂度为 O(1)</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>insert, remove, shift,  and unshift 的复杂度为 O(n) </li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>PhotoShop中使用主要的数据结构就是 Vector  —- Sean Parent</p>
+</blockquote>
+</li>
+<li><p>Deque（发音[dek] ） 是一种双端队列“double-ended queue”。在 queue 的基础上增加了一个头指针，因此 shift 和 unshift 也是 O(1) 复杂度了。但带来的性能损耗并不多。<br>两个指针用于跟踪头部和尾部， 指针可以“wrap around”缓冲区的末尾，这避免了需要移动其他值来腾出空间。 这使得移位和移位非常快 - Vector无法与之竞争。<a href="https://player.vimeo.com/video/154438012" target="_blank" rel="noopener">视频说明</a></p>
+<ul>
+<li>优点：<ul>
+<li>低内存使用量。</li>
+<li>get,set, push, pop, shift, and unshift 的复杂度为 O(1)。</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>inser,remove 的复杂度为 O(n)。</li>
+<li>缓冲区容量必须是2的n次方。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Stack 是一种“LIFO” 结构，按照“后进先出”的原则允许访问、遍历、销毁结构顶部的值。Ds\Stack 的内部使用的是 Ds\Vector 的实现。</p>
+</li>
+<li>Queue 是一种“FIFO”结构，按照“先进先出”的原则允许访问、遍历、销毁结构顶部的值。Ds\Queue 内部使用的是 Ds\Deque 的实现。</li>
+<li>PriorityQueue（优先级队列） 与 Queue 非常的相似，按照分配的优先级将值推入队列，优先级最高的值始终位于队列的前端。遍历 PriorityQueue 具有破坏性，相当于连续的弹出操作，直到队列为空。<strong>使用最大堆实现</strong>。</li>
+<li>Hashable , 一个允许用对象作键的接口。注意：并不是<code>hashTable</code>。Hashable只引入了两种方法：hash和equals。支持Hashable接口的数据结构是Map和Set。</li>
+<li>Map , 一种连续的键值对集合。同 array 的使用是一致的，key 可是是任意的类型，但是必须唯一。如果相同的 key 添加到 Map 中，那么会替换掉原有的。同array 一样，插入的顺序会被保留。<ul>
+<li>优点：<ul>
+<li>效率和内存使用几乎和 Array 一致</li>
+<li>当Map 的大小下降到足够小时，会自动释放已分配的内存。</li>
+<li>key 和 value 可以是任意类型，甚至是对象。</li>
+<li>put, get, remove, 和 hasKey 的复杂度为 O(1)</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>当key 为对象时，不能转成 Array 。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Set，是一个无序唯一值的集合。Map 内部使用了 set 的实现，他们都是基于Array 相同的内部结构，这意味这Set 的排序具有 O(n*log n) 的复杂度。<ul>
+<li>优点：<ul>
+<li>添加、删除、引用都是 O(1)的复杂度</li>
+<li>使用 Hashable 的接口</li>
+<li>支持任何类型的值。</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>不支持 push, pop, insert, shift, unshift</li>
+<li>如果在索引之前删除了值，那么复杂度会从 O(1) 降到 O(n)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>这里在说明一点，Array中的值本身是没有索引的，因此在使用 <code>in_array()</code>的时候呈线性搜索，复杂度为 O(n)。<br>如果想要创建一个唯一值数组，可以使用 <code>array_unique()</code>，由于<code>array_unique()</code>针对的是 value 而不是 key，所以每个数组成员都会被限行搜索，复杂度会变为 O(n²)。</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP7-2-Data-Structures-使用"><span class="toc-number">1.</span> <span class="toc-text">PHP7.2 Data Structures 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装"><span class="toc-number">1.1.</span> <span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-PHP-原始的数据结构Array"><span class="toc-number">1.2.</span> <span class="toc-text">2. PHP 原始的数据结构Array</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-缺点"><span class="toc-number">1.2.1.</span> <span class="toc-text">Array 缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口类"><span class="toc-number">1.2.2.</span> <span class="toc-text">接口类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现类"><span class="toc-number">1.2.3.</span> <span class="toc-text">实现类</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://alex77lee.github.io/2018/07/06/2018-07-06/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&text=PHP7.2 Data Structures 使用"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&is_video=false&description=PHP7.2 Data Structures 使用"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=PHP7.2 Data Structures 使用&body=Check out this article: http://alex77lee.github.io/2018/07/06/2018-07-06/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&title=PHP7.2 Data Structures 使用"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://alex77lee.github.io/2018/07/06/2018-07-06/&name=PHP7.2 Data Structures 使用&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Alex
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+

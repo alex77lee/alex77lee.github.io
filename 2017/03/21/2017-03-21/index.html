@@ -1,377 +1,141 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <!--
-        © Material Theme
-        https://github.com/viosey/hexo-theme-material
-        Version: 1.2.6 -->
-
-    <!-- Title -->
-    
-    <title>
-        
-            程序员，这是你想要的技术leader吗？---- 读后笔记 | 
-        
-        IMPORT THIS
-    </title>
-
-    <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="192x192" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
-
-    <!-- Meta & Info -->
+<html lang=zh>
+<head>
+    <!-- so meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0097A7">
-    <meta name="author" content="Alex">
-    <meta name="description" content="“好好学习，天天向上。”">
-    <meta name="keywords" content="null">
-
-    <!--iOS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-title" content="Title">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="480">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="IMPORT THIS">
-
-    <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://alex77lee.github.io">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="程序员，这是你想要的技术leader吗？---- 读后笔记 | IMPORT THIS">
-    <meta property="og:description" content="“好好学习，天天向上。”">
-
-    <!--[if lte IE 9]>
-        <link rel="stylesheet" href="/css/ie-blocker.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="2017-03-21 周明耀 InfoQ InfoQ 作者｜周明耀    技术团队的领导总是在发愁怎样带团队，团队的程序员总是会抵触各种团队“文化”、规章制度。两者都有各自的角度和出发点，很难分出真正的对错。这篇文章里的技术leader，是身为程序员的你想要的吗？是同为技术leader的你所追求的吗？  本文是「我所理解的技术管理——如何带领一支软件开发团队」系列文章第一篇。 本系列文章主要分为以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序员，这是你想要的技术leader吗？---- 读后笔记">
+<meta property="og:url" content="http://alex77lee.github.io/2017/03/21/2017-03-21/index.html">
+<meta property="og:site_name" content="IMPORT THIS">
+<meta property="og:description" content="2017-03-21 周明耀 InfoQ InfoQ 作者｜周明耀    技术团队的领导总是在发愁怎样带团队，团队的程序员总是会抵触各种团队“文化”、规章制度。两者都有各自的角度和出发点，很难分出真正的对错。这篇文章里的技术leader，是身为程序员的你想要的吗？是同为技术leader的你所追求的吗？  本文是「我所理解的技术管理——如何带领一支软件开发团队」系列文章第一篇。 本系列文章主要分为以">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://oij1682n2.bkt.clouddn.com/6360438160865604241511559876_o-LEADER-facebook.jpg">
+<meta property="og:updated_time" content="2017-03-21T08:53:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="程序员，这是你想要的技术leader吗？---- 读后笔记">
+<meta name="twitter:description" content="2017-03-21 周明耀 InfoQ InfoQ 作者｜周明耀    技术团队的领导总是在发愁怎样带团队，团队的程序员总是会抵触各种团队“文化”、规章制度。两者都有各自的角度和出发点，很难分出真正的对错。这篇文章里的技术leader，是身为程序员的你想要的吗？是同为技术leader的你所追求的吗？  本文是「我所理解的技术管理——如何带领一支软件开发团队」系列文章第一篇。 本系列文章主要分为以">
+<meta name="twitter:image" content="http://oij1682n2.bkt.clouddn.com/6360438160865604241511559876_o-LEADER-facebook.jpg">
+    
+    
         
-            <script src="/js/ie-blocker.zhCN.js"></script>
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
         
-    <![endif]-->
-
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="/css/material.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
-    <!-- Config CSS -->
-
-
-<!-- Other Styles -->
-<style>
-    body, html {
-        font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    }
-
-    a {
-        color: #00838F;
-    }
-
-    .mdl-card__media,
-    #search-label,
-    #search-form-label:after,
-    #scheme-Paradox .hot_tags-count,
-    #scheme-Paradox .sidebar_archives-count,
-    #scheme-Paradox .sidebar-colored .sidebar-header,
-    #scheme-Paradox .sidebar-colored .sidebar-badge{
-        background-color: #0097A7 !important;
-    }
-
-    /* Sidebar User Drop Down Menu Text Color */
-    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
-    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-        color: #0097A7 !important;
-    }
-
-    #post_entry-right-info,
-    .sidebar-colored .sidebar-nav li:hover > a,
-    .sidebar-colored .sidebar-nav li:hover > a i,
-    .sidebar-colored .sidebar-nav li > a:hover,
-    .sidebar-colored .sidebar-nav li > a:hover i,
-    .sidebar-colored .sidebar-nav li > a:focus i,
-    .sidebar-colored .sidebar-nav > .open > a,
-    .sidebar-colored .sidebar-nav > .open > a:hover,
-    .sidebar-colored .sidebar-nav > .open > a:focus,
-    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-        color: #0097A7 !important;
-    }
-
-    .toTop {
-        background: #757575 !important;
-    }
-
-    .material-layout .material-post>.material-nav,
-    .material-layout .material-index>.material-nav,
-    .material-nav a {
-        color: #757575;
-    }
-
-    #scheme-Paradox .MD-burger-layer {
-        background-color: #757575;
-    }
-
-    #scheme-Paradox #post-toc-trigger-btn {
-        color: #757575;
-    }
-
-    .post-toc a:hover {
-        color: #00838F;
-        text-decoration: underline;
-    }
-</style>
-
-
-<!-- Theme Background Related-->
-
-    <style>
-        body {
-            background-color: #F5F5F5;
-        }
-
-        /* blog_info bottom background */
-        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
-            background-color: #fff;
-        }
-    </style>
-    <script type="text/javascript">
-        window.onload = function () {
-            setTimeout(function () {
-                document.body.background="https://api.i-meto.com/bing?new, color=blue, type=N";
-            }, 2000);
-        }
-    </script>
-
-
-
-
-<!-- Fade Effect -->
-
-    <style>
-        .fade {
-            transition: all 800ms linear;
-            -webkit-transform: translate3d(0,0,0);
-            -moz-transform: translate3d(0,0,0);
-            -ms-transform: translate3d(0,0,0);
-            -o-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-            opacity: 1;
-        }
-
-        .fade.out{
-            opacity: 0;
-        }
-    </style>
-
-
-    <script src="/js/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="/css/highlight/atom-one-dark.css">
-
-    <!-- UC Browser Compatible-->
-    <script>
-        var agent = navigator.userAgent.toLowerCase();
-        if(agent.indexOf('ucbrowser')>0) {
-            document.write('<link rel="stylesheet" href="/css/uc.css">');
-            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
-        }
-    </script>
-
-    <!-- Custom Head -->
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>程序员，这是你想要的技术leader吗？---- 读后笔记</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
     
 </head>
 
-
-    
-        <body id="scheme-Paradox">
-            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
-                
-
-                <!-- Main Container -->
-                <main class="material-layout__content" id="main">
-
-                    <!-- Top Anchor -->
-                    <div id="top"></div>
-
-                    
-                        <!-- Hamburger Button -->
-                        <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
-                        </button>
-                    
-
-                    <!-- Post TOC -->
-
-    
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
-
-    <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#团队领导者职业发展"><span class="post-toc-number">1.</span> <span class="post-toc-text">团队领导者职业发展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#工程师分类"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">工程师分类</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#团队领导者品质"><span class="post-toc-number">2.</span> <span class="post-toc-text">团队领导者品质</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#工作职责定位"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">工作职责定位</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#成熟"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">成熟</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#勇敢"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">勇敢</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#勤奋"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">勤奋</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#脚踏实地"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">脚踏实地</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#公平、透明"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">公平、透明</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#决策能力"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">决策能力</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#开放姿态"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">开放姿态</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#为人处世"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">为人处世</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#宽容"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">宽容</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#保持身体健康"><span class="post-toc-number">2.11.</span> <span class="post-toc-text">保持身体健康</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#带领团队心得"><span class="post-toc-number">3.</span> <span class="post-toc-text">带领团队心得</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#幼儿园家长会感悟"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">幼儿园家长会感悟</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#自主循环"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">自主循环</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#技术人员心态成长四个阶段"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">技术人员心态成长四个阶段</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#个人职业发展"><span class="post-toc-number">4.</span> <span class="post-toc-text">个人职业发展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不要计较职位，更应该看岗位发展前景"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">不要计较职位，更应该看岗位发展前景</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#抛弃通道思维，建立雷达视角"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">抛弃通道思维，建立雷达视角</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#时间管理"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">时间管理</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#总结"><span class="post-toc-number">5.</span> <span class="post-toc-text">总结</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#读后笔记"><span class="post-toc-number">6.</span> <span class="post-toc-text">读后笔记</span></a></li></ol>
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
-    </ul>
-
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://oij1682n2.bkt.clouddn.com/6360438160865604241511559876_o-LEADER-facebook.jpg)">
-    
-            <p class="article-headline-p">
-                程序员，这是你想要的技术leader吗？---- 读后笔记
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="http://oij1682n2.bkt.clouddn.com/12110830973_abb6437d89_o.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Alex</strong>
-        <span>3月 21, 2017</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
         
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=程序员，这是你想要的技术leader吗？---- 读后笔记&url=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=程序员，这是你想要的技术leader吗？---- 读后笔记&url=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html&via=Alex" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://alex77lee.github.io//2017/03/21/2017-03-21/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2017/03/22/2017-03-22/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2017/03/17/2017-03-17/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://alex77lee.github.io/2017/03/21/2017-03-21/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&text=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&is_video=false&description=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=程序员，这是你想要的技术leader吗？---- 读后笔记&body=Check out this article: http://alex77lee.github.io/2017/03/21/2017-03-21/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&name=程序员，这是你想要的技术leader吗？---- 读后笔记&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#团队领导者职业发展"><span class="toc-number">1.</span> <span class="toc-text">团队领导者职业发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#工程师分类"><span class="toc-number">1.1.</span> <span class="toc-text">工程师分类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#团队领导者品质"><span class="toc-number">2.</span> <span class="toc-text">团队领导者品质</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#工作职责定位"><span class="toc-number">2.1.</span> <span class="toc-text">工作职责定位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#成熟"><span class="toc-number">2.2.</span> <span class="toc-text">成熟</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#勇敢"><span class="toc-number">2.3.</span> <span class="toc-text">勇敢</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#勤奋"><span class="toc-number">2.4.</span> <span class="toc-text">勤奋</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脚踏实地"><span class="toc-number">2.5.</span> <span class="toc-text">脚踏实地</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公平、透明"><span class="toc-number">2.6.</span> <span class="toc-text">公平、透明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#决策能力"><span class="toc-number">2.7.</span> <span class="toc-text">决策能力</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#开放姿态"><span class="toc-number">2.8.</span> <span class="toc-text">开放姿态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为人处世"><span class="toc-number">2.9.</span> <span class="toc-text">为人处世</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#宽容"><span class="toc-number">2.10.</span> <span class="toc-text">宽容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#保持身体健康"><span class="toc-number">2.11.</span> <span class="toc-text">保持身体健康</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#带领团队心得"><span class="toc-number">3.</span> <span class="toc-text">带领团队心得</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#幼儿园家长会感悟"><span class="toc-number">3.1.</span> <span class="toc-text">幼儿园家长会感悟</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自主循环"><span class="toc-number">3.2.</span> <span class="toc-text">自主循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#技术人员心态成长四个阶段"><span class="toc-number">3.3.</span> <span class="toc-text">技术人员心态成长四个阶段</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#个人职业发展"><span class="toc-number">4.</span> <span class="toc-text">个人职业发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不要计较职位，更应该看岗位发展前景"><span class="toc-number">4.1.</span> <span class="toc-text">不要计较职位，更应该看岗位发展前景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#抛弃通道思维，建立雷达视角"><span class="toc-number">4.2.</span> <span class="toc-text">抛弃通道思维，建立雷达视角</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#时间管理"><span class="toc-number">4.3.</span> <span class="toc-text">时间管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#读后笔记"><span class="toc-number">6.</span> <span class="toc-text">读后笔记</span></a></li></ol>
+    </div>
+  </span>
 </div>
 
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>2017-03-21 周明耀 InfoQ InfoQ</p>
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        程序员，这是你想要的技术leader吗？---- 读后笔记
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">IMPORT THIS</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-03-21T06:30:34.000Z" itemprop="datePublished">2017-03-21</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>2017-03-21 周明耀 InfoQ InfoQ</p>
 <p>作者｜周明耀  </p>
 <blockquote>
 <p>技术团队的领导总是在发愁怎样带团队，团队的程序员总是会抵触各种团队“文化”、规章制度。两者都有各自的角度和出发点，很难分出真正的对错。这篇文章里的技术leader，是身为程序员的你想要的吗？是同为技术leader的你所追求的吗？</p>
@@ -416,13 +180,29 @@
 <p>在这块墓碑上，刻着这样的一段话：</p>
 <blockquote>
 <p>When I was young and free and my imagination had no limits,I dreamed of changing the world.As I grew older and wiser, I discovered the world would not change, so I shortened my sights somewhat and decided to change only my country. But it, too, seemed immovable.</p>
+</blockquote>
+<blockquote>
 <p>As I grew into my twilight years, in one last desperate attempt, I settled for changing only my family, those closest to me, but alas, they would have none of it.</p>
+</blockquote>
+<blockquote>
 <p>And now, as I lie on my deathbed, I suddenly realize:</p>
+</blockquote>
+<blockquote>
 <p>If I had only changed myself first, then by example I would have changed my family.From their inspiration and encouragement, I would then have been able to better my country, and who knows, I may have even changed the world.</p>
+</blockquote>
+<blockquote>
 <p>当我年轻的时候，我的想象力从没有受到过限制，我梦想改变这个世界。</p>
+</blockquote>
+<blockquote>
 <p>当我成熟以后，我发现我不能改变这个世界，我将目光缩短了些，决定只改变我的国家。</p>
+</blockquote>
+<blockquote>
 <p>当我进入暮年后，我发现我不能改变我的国家，我的最后愿望仅仅是改变一下我的家庭。但是，这也不可能。</p>
+</blockquote>
+<blockquote>
 <p>当我躺在床上，行将就木时，我突然意识到：</p>
+</blockquote>
+<blockquote>
 <p>如果一开始我仅仅去改变我自己，然后作为一个榜样，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情。然后谁知道呢？我甚至可能改变这个世界。</p>
 </blockquote>
 <p>回到技术管理领域，很多技术管理人，无论是初次担任还是资深人士，都会出现看不清自己的情况，即说白了容易自大。人一自大，就容易犯错误，技术、产品上容易定位失误。举个例子，如果现在我们决定做一个分布式数据库类似的存储组件，相信有一小部分人觉得应该自己做这个组件的底层技术，大部分的人会选择使用开源框架实现，这其实都没有错，取决于你产品的定位、公司实力，我想说的是，你在做这些决定之前，有没有做足充分的技术调研、产品调研工作，能不能如数家珍般地说清楚已有框架、产品的实现原理、优缺点、是否适用于你的产品场景等等，这些都是技术调研的工作，也是我们脚踏实地做事的一个例子。</p>
@@ -488,368 +268,94 @@
 </li>
 </ol>
 
+  </div>
+</article>
+
+
+
+    </div>
     
+      <div id="footer-post-container">
+  <div id="footer-post">
 
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-
-
-
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-        <a href="//2017/03/22/2017-03-22-1/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="//2017/03/17/2017-03-17/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
-        </div>
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
     </div>
 
-
-
-                    
-                        <!-- Overlay For Active Sidebar -->
-<div class="sidebar-overlay"></div>
-
-<!-- Material sidebar -->
-<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
-    <div id="sidebar-main">
-        <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
-    <!-- Top bar -->
-    <div class="top-bar"></div>
-
-    <!-- Sidebar toggle button -->
-    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
-        <i class="material-icons">clear_all</i>
-        <span class="mdl-button__ripple-container">
-            <span class="mdl-ripple">
-            </span>
-        </span>
-    </button>
-
-    <!-- Sidebar Avatar -->
-    <div class="sidebar-image">
-        <img src="http://oij1682n2.bkt.clouddn.com/12110830973_abb6437d89_o.png" alt="Alex's avatar">
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#团队领导者职业发展"><span class="toc-number">1.</span> <span class="toc-text">团队领导者职业发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#工程师分类"><span class="toc-number">1.1.</span> <span class="toc-text">工程师分类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#团队领导者品质"><span class="toc-number">2.</span> <span class="toc-text">团队领导者品质</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#工作职责定位"><span class="toc-number">2.1.</span> <span class="toc-text">工作职责定位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#成熟"><span class="toc-number">2.2.</span> <span class="toc-text">成熟</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#勇敢"><span class="toc-number">2.3.</span> <span class="toc-text">勇敢</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#勤奋"><span class="toc-number">2.4.</span> <span class="toc-text">勤奋</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脚踏实地"><span class="toc-number">2.5.</span> <span class="toc-text">脚踏实地</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公平、透明"><span class="toc-number">2.6.</span> <span class="toc-text">公平、透明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#决策能力"><span class="toc-number">2.7.</span> <span class="toc-text">决策能力</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#开放姿态"><span class="toc-number">2.8.</span> <span class="toc-text">开放姿态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#为人处世"><span class="toc-number">2.9.</span> <span class="toc-text">为人处世</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#宽容"><span class="toc-number">2.10.</span> <span class="toc-text">宽容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#保持身体健康"><span class="toc-number">2.11.</span> <span class="toc-text">保持身体健康</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#带领团队心得"><span class="toc-number">3.</span> <span class="toc-text">带领团队心得</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#幼儿园家长会感悟"><span class="toc-number">3.1.</span> <span class="toc-text">幼儿园家长会感悟</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自主循环"><span class="toc-number">3.2.</span> <span class="toc-text">自主循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#技术人员心态成长四个阶段"><span class="toc-number">3.3.</span> <span class="toc-text">技术人员心态成长四个阶段</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#个人职业发展"><span class="toc-number">4.</span> <span class="toc-text">个人职业发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不要计较职位，更应该看岗位发展前景"><span class="toc-number">4.1.</span> <span class="toc-text">不要计较职位，更应该看岗位发展前景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#抛弃通道思维，建立雷达视角"><span class="toc-number">4.2.</span> <span class="toc-text">抛弃通道思维，建立雷达视角</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#时间管理"><span class="toc-number">4.3.</span> <span class="toc-text">时间管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#读后笔记"><span class="toc-number">6.</span> <span class="toc-text">读后笔记</span></a></li></ol>
     </div>
 
-    <!-- Sidebar Email -->
-    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        alex77lee@163.com
-        <b class="caret"></b>
-    </a>
-</div>
-
-
-        <!-- Sidebar Navigation  -->
-        <ul class="nav sidebar-nav">
-    <!-- User dropdown  -->
-    <li class="dropdown">
-        <ul id="settings-dropdown" class="dropdown-menu">
-            
-                <li>
-                    <a href="mailto:alex77lee@163.com" target="_blank" title="Email Me">
-                        <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
-                        Email Me
-                    </a>
-                </li>
-            
-        </ul>
-    </li>
-
-    <!-- Homepage -->
-    <li id="sidebar-first-li">
-        <a href="/" target="_self">
-            <i class="material-icons sidebar-material-icons">home</i>
-            主页
-        </a>
-    </li>
-
-    <!-- I'm Feeling Lucky -->
-    <!--
-    <li class="dropdown">
-        <a href="" target="_self">
-            <i class="material-icons sidebar-material-icons">explore</i>
-             sidebar.imlucky
-        </a>
-    </li>
-    -->
-
-    <!-- Archives  -->
-    <li class="dropdown">
-        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-            <i class="material-icons sidebar-material-icons">inbox</i>
-             归档
-            <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-            <li>
-            <a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a>
-        </ul>
-    </li>
-
-    <!-- Categories  -->
-    
-        <li class="dropdown">
-            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-                <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
-                分类
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li>
-                <a class="sidebar_archives-link" href="/categories/Python学习/">Python学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/工具推荐/">工具推荐<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/读书笔记/">读书笔记<span class="sidebar_archives-count">3</span></a>
-            </ul>
-        </li>
-    
-
-    <!-- Divider -->
-    <li class="divider"></li>
-
-
-    <!-- Pages  -->
-  	
-
-    <!-- Article Numebr  -->
-    <li>
-        <a href="/archives">
-            文章总数
-            <span class="sidebar-badge">6</span>
-        </a>
-    </li>
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://alex77lee.github.io/2017/03/21/2017-03-21/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&text=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&is_video=false&description=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=程序员，这是你想要的技术leader吗？---- 读后笔记&body=Check out this article: http://alex77lee.github.io/2017/03/21/2017-03-21/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&title=程序员，这是你想要的技术leader吗？---- 读后笔记"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://alex77lee.github.io/2017/03/21/2017-03-21/&name=程序员，这是你想要的技术leader吗？---- 读后笔记&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
-
-        <!-- Sidebar Divider -->
-        <div class="sidebar-divider"></div>
-
-        <!-- Sidebar Footer -->
-        <!--
-I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
-If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
-It will not impact the appearance and can give developers a lot of support :)
-
-很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
-如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
-它不会影响美观并可以给开发者很大的支持和动力。 :)
--->
-
-<!-- Theme Material -->
-<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-        主题 - Material
-        <span class="sidebar-badge badge-circle">i</span>
     </div>
-</a>
 
-<!-- Help & Support -->
-<!--
-<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-    sidebar.help
-    <span class="mdl-button__ripple-container">
-      <span class="mdl-ripple"></span>
-    </span>
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
   </div>
-</a>
--->
-
-<!-- Feedback -->
-<!--
-<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-         sidebar.feedback
-                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
-</a>
--->
-
-<!-- Abount Theme -->
-<!--
-<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-         sidebar.about_theme
-        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
-</a>-->
-
-    </div>
-
-    <!-- Sidebar Sponsor -->
-    
-
-</aside>
-
-                    
-
-                    
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
 </div>
 
-                    
-
-                    <!--Footer-->
-<footer class="mdl-mini-footer" id="bottom">
     
-        <!-- Paradox Footer Left Section -->
-        <div class="mdl-mini-footer--left-section sns-list">
-    <!-- Twitter -->
-    
-
-    <!-- Facebook -->
-    
-
-    <!-- Google + -->
-    
-
-    <!-- Weibo -->
-    
-
-    <!-- Instagram -->
-    
-
-    <!-- Tumblr -->
-    
-
-    <!-- Github -->
-    
-
-    <!-- LinkedIn -->
-    
-
-    <!-- Zhihu -->
-    
-
-    <!-- Bilibili -->
-    
-
-    <!-- Telegram -->
-    
-</div>
-
-
-        <!--Copyright-->
-        <div id="copyright">
-            Copyright&nbsp;©&nbsp;
-            <script type="text/javascript">
-                var fd = new Date();
-                document.write(fd.getFullYear());
-            </script>
-            &nbsp;IMPORT THIS
-        </div>
-
-        <!-- Paradox Footer Right Section -->
-
-        <!--
-        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
-        It will not impact the appearance and can give developers a lot of support :)
-
-        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
-        它不会影响美观并可以给开发者很大的支持。 :)
-        -->
-
-        <div class="mdl-mini-footer--right-section">
-            <div>
-                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
-                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
-            </div>
-        </div>
-    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Alex
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </nav>
+  </div>
 </footer>
 
-
-                    <!-- Import File -->
-<script src="/js/highlight.min.js"></script>
-<script src="/js/js.min.js"></script>
-<script src="/js/nprogress.js"></script>
-
-<script type="text/javascript">
-    NProgress.configure({
-        showSpinner: true
-    });
-    NProgress.start();
-
-    $('#nprogress .bar').css({
-        'background': '#FF4081'
-    });
-    $('#nprogress .peg').css({
-        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
-    });
-    $('#nprogress .spinner-icon').css({
-        'border-top-color': '#FF4081',
-        'border-left-color': '#FF4081'
-    });
-
-    setTimeout(function() {
-        NProgress.done();
-        $('.fade').removeClass('out');
-    }, 800);
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Swiftye -->
-
-
-<!-- Local Search-->
-
-
-<!-- Window Load-->
-<script>
-    $(window).load(function() {
-        // Post_Toc parent position fixed
-        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
-    });
-</script>
-
-<!-- MathJax Load-->
-
-
-                </main>
-            </div>
-        </body>
-    
+</body>
 </html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
