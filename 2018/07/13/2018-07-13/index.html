@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="CentOS 7 安装 Python3.71. 我们先看看现有的 python2在哪里12[root@lidan /]# whereis pythonpython: /usr/bin/python /usr/bin/python2.7 /usr/bin/python.bak /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/incl">
+<meta name="keywords" content="Python3.7">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS7 安装 Python3.7">
+<meta property="og:url" content="http://alex77lee.github.io/2018/07/13/2018-07-13/index.html">
+<meta property="og:site_name" content="IMPORT THIS">
+<meta property="og:description" content="CentOS 7 安装 Python3.71. 我们先看看现有的 python2在哪里12[root@lidan /]# whereis pythonpython: /usr/bin/python /usr/bin/python2.7 /usr/bin/python.bak /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/incl">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://oij1682n2.bkt.clouddn.com/WX20180713-162331@2x.png">
+<meta property="og:updated_time" content="2018-07-13T08:46:14.951Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CentOS7 安装 Python3.7">
+<meta name="twitter:description" content="CentOS 7 安装 Python3.71. 我们先看看现有的 python2在哪里12[root@lidan /]# whereis pythonpython: /usr/bin/python /usr/bin/python2.7 /usr/bin/python.bak /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/incl">
+<meta name="twitter:image" content="http://oij1682n2.bkt.clouddn.com/WX20180713-162331@2x.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>CentOS7 安装 Python3.7</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2018/07/06/2018-07-06/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://alex77lee.github.io/2018/07/13/2018-07-13/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&text=CentOS7 安装 Python3.7"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&is_video=false&description=CentOS7 安装 Python3.7"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CentOS7 安装 Python3.7&body=Check out this article: http://alex77lee.github.io/2018/07/13/2018-07-13/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&name=CentOS7 安装 Python3.7&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CentOS-7-安装-Python3-7"><span class="toc-number">1.</span> <span class="toc-text">CentOS 7 安装 Python3.7</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-我们先看看现有的-python2在哪里"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. 我们先看看现有的 python2在哪里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-接下来我们要安装编译-Python3的相关包"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. 接下来我们要安装编译 Python3的相关包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安装pip，因为-CentOs-是没有-pip-的。"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. 安装pip，因为 CentOs 是没有 pip 的。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-可以用-python-安装一下-wget"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 可以用 python 安装一下 wget</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-我们可以下载-python3-7的源码包了"><span class="toc-number">1.0.5.</span> <span class="toc-text">5. 我们可以下载 python3.7的源码包了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-添加软链接"><span class="toc-number">1.0.6.</span> <span class="toc-text">6. 添加软链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装-python3的那个版本，都必须要做的）"><span class="toc-number">1.0.7.</span> <span class="toc-text">7. 更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装 python3的那个版本，都必须要做的）</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        CentOS7 安装 Python3.7
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">IMPORT THIS</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-07-13T03:16:49.080Z" itemprop="datePublished">2018-07-13</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Python3-7/">Python3.7</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><img src="http://oij1682n2.bkt.clouddn.com/WX20180713-162331@2x.png" alt="你要皮一下么？"></p>
+<h1 id="CentOS-7-安装-Python3-7"><a href="#CentOS-7-安装-Python3-7" class="headerlink" title="CentOS 7 安装 Python3.7"></a>CentOS 7 安装 Python3.7</h1><h3 id="1-我们先看看现有的-python2在哪里"><a href="#1-我们先看看现有的-python2在哪里" class="headerlink" title="1. 我们先看看现有的 python2在哪里"></a>1. 我们先看看现有的 python2在哪里</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@lidan /]# whereis python</span><br><span class="line">python: /usr/bin/python /usr/bin/python2.7 /usr/bin/python.bak /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/include/python2.7 /usr/share/man/man1/python.1.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@lidan bin]# ll python*</span><br><span class="line">lrwxrwxrwx. 1 root root    9 5月  27 2016 python2 -&gt; python2.7</span><br><span class="line">-rwxr-xr-x. 1 root root 7136 11月 20 2015 python2.7</span><br><span class="line">lrwxrwxrwx. 1 root root    7 5月  27 2016 python.bak -&gt; python2</span><br></pre></td></tr></table></figure>
+<h3 id="2-接下来我们要安装编译-Python3的相关包"><a href="#2-接下来我们要安装编译-Python3的相关包" class="headerlink" title="2. 接下来我们要安装编译 Python3的相关包"></a>2. 接下来我们要安装编译 Python3的相关包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel</span><br></pre></td></tr></table></figure>
+<p>这里面有一个包很关键<code>libffi-devel</code>，因为只有3.7才会用到这个包，如果不安装这个包的话，在 make 阶段会出现如下的报错：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ModuleNotFoundError: No module named &apos;_ctypes&apos;</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-安装pip，因为-CentOs-是没有-pip-的。"><a href="#3-安装pip，因为-CentOs-是没有-pip-的。" class="headerlink" title="3. 安装pip，因为 CentOs 是没有 pip 的。"></a>3. 安装pip，因为 CentOs 是没有 pip 的。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#运行这个命令添加epel扩展源 </span><br><span class="line">yum -y install epel-release </span><br><span class="line">#安装pip </span><br><span class="line">yum install python-pip</span><br></pre></td></tr></table></figure>
+<h3 id="4-可以用-python-安装一下-wget"><a href="#4-可以用-python-安装一下-wget" class="headerlink" title="4. 可以用 python 安装一下 wget"></a>4. 可以用 python 安装一下 wget</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install wget</span><br></pre></td></tr></table></figure>
+<h3 id="5-我们可以下载-python3-7的源码包了"><a href="#5-我们可以下载-python3-7的源码包了" class="headerlink" title="5. 我们可以下载 python3.7的源码包了"></a>5. 我们可以下载 python3.7的源码包了</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#解压缩</span><br><span class="line">tar -zxvf Python-3.7.0.tgz</span><br><span class="line"></span><br><span class="line">#进入解压后的目录，依次执行下面命令进行手动编译</span><br><span class="line">./configure prefix=/usr/local/python3 </span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<p>如果最后没提示出错，就代表正确安装了，在/usr/local/目录下就会有python3目录</p>
+<h3 id="6-添加软链接"><a href="#6-添加软链接" class="headerlink" title="6. 添加软链接"></a>6. 添加软链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#添加python3的软链接 </span><br><span class="line">ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3.7 </span><br><span class="line">#添加 pip3 的软链接 </span><br><span class="line">ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3.7</span><br><span class="line">#测试是否安装成功了 </span><br><span class="line">python -V</span><br></pre></td></tr></table></figure>
+<h3 id="7-更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装-python3的那个版本，都必须要做的）"><a href="#7-更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装-python3的那个版本，都必须要做的）" class="headerlink" title="7. 更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装 python3的那个版本，都必须要做的）"></a>7. 更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装 python3的那个版本，都必须要做的）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vi /usr/bin/yum </span><br><span class="line">把 #! /usr/bin/python 修改为 #! /usr/bin/python2 </span><br><span class="line">vi /usr/libexec/urlgrabber-ext-down </span><br><span class="line">把 #! /usr/bin/python 修改为 #! /usr/bin/python2</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CentOS-7-安装-Python3-7"><span class="toc-number">1.</span> <span class="toc-text">CentOS 7 安装 Python3.7</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-我们先看看现有的-python2在哪里"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. 我们先看看现有的 python2在哪里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-接下来我们要安装编译-Python3的相关包"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. 接下来我们要安装编译 Python3的相关包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安装pip，因为-CentOs-是没有-pip-的。"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. 安装pip，因为 CentOs 是没有 pip 的。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-可以用-python-安装一下-wget"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 可以用 python 安装一下 wget</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-我们可以下载-python3-7的源码包了"><span class="toc-number">1.0.5.</span> <span class="toc-text">5. 我们可以下载 python3.7的源码包了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-添加软链接"><span class="toc-number">1.0.6.</span> <span class="toc-text">6. 添加软链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装-python3的那个版本，都必须要做的）"><span class="toc-number">1.0.7.</span> <span class="toc-text">7. 更改yum配置，因为其要用到python2才能执行，否则会导致yum不能正常使用（不管安装 python3的那个版本，都必须要做的）</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://alex77lee.github.io/2018/07/13/2018-07-13/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&text=CentOS7 安装 Python3.7"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&is_video=false&description=CentOS7 安装 Python3.7"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CentOS7 安装 Python3.7&body=Check out this article: http://alex77lee.github.io/2018/07/13/2018-07-13/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&title=CentOS7 安装 Python3.7"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://alex77lee.github.io/2018/07/13/2018-07-13/&name=CentOS7 安装 Python3.7&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Alex
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
